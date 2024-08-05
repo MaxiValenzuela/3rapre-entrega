@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videoclub MxMaster</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1>¡Bienvenidos al Videoclub MxMaster!</h1>
+    <p>Aquí podrá comprar las películas según su gusto, lo invitamos a seguir</p>
+
+    <div id="menu">
+        <label for="opcion">Por favor ingrese la opción que desea seleccionar:</label>
+        <select id="opcion">
+            <option value="1">Seleccionar por CATEGORÍA</option>
+            <option value="2">Seleccionar por PRECIO</option>
+        </select>
+        <button id="seleccionar-btn">Seleccionar</button>
+    </div>
+
+    <div id="categoria" class="oculto">
+        <label for="categoria-select">Seleccione una categoría:</label>
+        <select id="categoria-select">
+            <option value="1">Acción</option>
+            <option value="2">Anime</option>
+            <option value="3">Romántica</option>
+            <option value="4">Terror</option>
+        </select>
+        <button id="categoria-btn">Filtrar por categoría</button>
+    </div>
+
+    <div id="precio" class="oculto">
+        <label for="precio-input">Ingrese el rango de precio:</label>
+        <input type="number" id="precio-input" min="1">
+        <button id="precio-btn">Filtrar por precio</button>
+    </div>
+
+    <div id="resultados"></div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
